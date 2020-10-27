@@ -15,6 +15,9 @@ spec:
       containers:
         - name: client
           image: jmbutler/client
+          env:
+            - name: SERVER_URL_BASE
+              value: 'www.ticketing-events-app.xyz'
 ---
 apiVersion: v1
 kind: Service
