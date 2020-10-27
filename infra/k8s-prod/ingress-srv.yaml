@@ -31,6 +31,7 @@ spec:
               serviceName: client-srv
               servicePort: 3000
 ---
+# Due to bug in Digital Ocean Load Balancer
 apiVersion: v1
 kind: Service
 metadata:
