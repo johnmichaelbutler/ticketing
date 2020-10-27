@@ -4,8 +4,7 @@ const buildClient = ({ req }) => {
   if (typeof window === 'undefined') {
     // We are on the server
     return axios.create({
-      baseURL:
-        'http://nginx-ingress-1602167419-controller.default.svc.cluster.local',
+      baseURL: 'www.ticketing-events-app.xyz',
       headers: req.headers,
     });
   } else {
