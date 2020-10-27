@@ -26,4 +26,4 @@ jobs:
 # Get connection credentials to our Digital Ocean k8s cluster
       - run: doctl kubernetes cluster kubeconfig save ticketing
 # Reach into DO k8s cluster and tell client service to restart itself
-      - run: kubectl rollout restart deployment client-depl
+      - run: kubectl rollout restart deployment k8s-dev/client-depl
