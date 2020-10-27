@@ -1,5 +1,4 @@
 import buildClient from '../api/build-client';
-import App from 'next/app';
 import Header from '../components/header';
 import 'bootstrap/dist/css/bootstrap.css';
 
