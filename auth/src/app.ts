@@ -19,7 +19,7 @@ app.use(
     // Encryption
     signed: false,
     // Should cookie only be sent over HTTPS
-    secure: process.env.NODE_ENV !== 'test',
+    secure: false
   })
 );
 
