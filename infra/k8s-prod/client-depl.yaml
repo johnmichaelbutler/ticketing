@@ -17,7 +17,7 @@ spec:
           image: jmbutler/client
           env:
             - name: SERVER_URL_BASE
-              value: 'www.ticketing-events-app.xyz'
+              value: 'http://www.ticketing-events-app.xyz'
 ---
 apiVersion: v1
 kind: Service
