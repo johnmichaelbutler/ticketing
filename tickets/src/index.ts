@@ -6,6 +6,7 @@ import { natsWrapper } from './nats-wrapper';
 
 
 const start = async () => {
+  console.log('Starting Tickets Service...')
   if (!process.env.JWT_KEY) {
     throw new Error('JWT Key not found');
   }
