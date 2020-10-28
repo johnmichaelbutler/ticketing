@@ -23,7 +23,7 @@ const Header = ({ currentUser }) => {
     });
 
   return (
-    <nav className="navbar navbar-light bg-light">
+    <nav className="navbar navbar-dark bg-dark">
       <Link href="/">
         <a className="navbar-brand">GitTix</a>
       </Link>

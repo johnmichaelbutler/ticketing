@@ -31,7 +31,7 @@ const OrderShow = ({ order, currentUser }) => {
   }
 
   return (
-    <div>
+    <div className="mt-5">
       <h1>Order Show</h1>
       <div>Time left to pay: {timeLeft} seconds</div>
       <StripeCheckout
