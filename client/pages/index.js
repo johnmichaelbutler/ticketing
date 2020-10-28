@@ -17,7 +17,14 @@ const LandingPage = ({ currentUser, tickets }) => {
 
   return (
     <div>
-      <h1>Tickets Available for Purchase</h1>
+      <div className="jumbotron text-center my-5 shadow">
+        <h1 className="display-4">GitTix</h1>
+        <p className="lead">
+          A microservices app using NATS Streaming Service to communicate events
+          across services and mongoDB to manage data
+        </p>
+      </div>
+      <h1 className="text-center">Tickets Available for Purchase</h1>
       <table className="table">
         <thead>
           <tr>

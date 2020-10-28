@@ -5,12 +5,14 @@ interface TicketAttrs {
   title: string;
   price: number;
   userId: string;
+  description: string;
 }
 
 interface TicketDoc extends mongoose.Document {
   title: string;
   price: number;
   userId: string;
+  description: string;
   version: number;
   orderId?: string;
 }
@@ -35,6 +37,9 @@ const ticketSchema = new mongoose.Schema(
       required: true,
     },
     orderId: {
+      type: String
+    },
+    description: {
       type: String
     }
   },

@@ -5,6 +5,7 @@ import { useRequest } from '../../hooks/use-request';
 const NewTicket = () => {
   const [title, setTitle] = useState('');
   const [price, setPrice] = useState('');
+  const [description, setDescription] = useState('');
 
   const { doRequest, errors } = useRequest({
     url: '/api/tickets',
@@ -12,6 +13,7 @@ const NewTicket = () => {
     body: {
       title,
       price,
+      description,
     },
     onSuccess: () => Router.push('/'),
   });
@@ -30,7 +32,7 @@ const NewTicket = () => {
   };
 
   return (
-    <div>
+    <div className="mt-5">
       <h1>Create a ticket</h1>
       <form onSubmit={onSubmit}>
         <div className="form-group">
@@ -48,6 +50,14 @@ const NewTicket = () => {
             onBlur={onBlur}
             value={price}
             onChange={(e) => setPrice(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
+          <label>Description</label>
+          <input
+            className="form-control"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
           />
         </div>
         {errors}
